@@ -1,0 +1,88 @@
+/* ====== Estilos base ====== */
+:root{
+  --fondo: #f3f7ff;         /* color claro de fondo */
+  --texto: #222;            /* color principal del texto */
+  --principal: #e63946;     /* acentos (botones, detalles) */
+  --titulos: #1d3557;       /* color para h1/h2 */
+  --borde: #cbd5e1;         /* color de bordes suaves */
+}
+
+* { box-sizing: border-box; }
+
+body{
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--texto);
+  background-color: var(--fondo); /* Cambia el background del body */
+  line-height: 1.6;
+  padding: 24px;
+}
+
+/* ====== Títulos y párrafos ====== */
+h1, h2{
+  color: var(--titulos);         /* Colores personalizados para títulos */
+  margin-top: 0;
+}
+
+p{
+  color: #333;                   /* Color de párrafos */
+  font-size: 1.05rem;
+}
+
+/* ====== Caja principal ====== */
+.tarjeta{
+  background: #fff;
+  border: 2px solid var(--borde); /* border del div principal */
+  border-radius: 12px;
+  padding: 24px;                  /* padding del div principal */
+  margin: 0 auto;                 /* centrado horizontal */
+  max-width: 800px;               /* ancho máximo agradable */
+  box-shadow: 0 6px 20px rgba(0,0,0,.06);
+}
+
+/* ====== Imagen responsive ====== */
+img{
+  display: block;
+  max-width: 100%;   /* que no se desborde */
+  height: auto;      /* conserva proporción */
+  border-radius: 10px;
+  margin: 12px 0 20px;
+}
+
+/* ====== Lista ====== */
+ul{
+  padding-left: 1.2rem;
+  list-style-type: square; /* cambia el tipo de viñeta */
+}
+li + li{
+  margin-top: 6px;
+}
+
+/* ====== Enlaces ====== */
+a{
+  color: var(--principal);
+  text-decoration: none;        /* quitamos subrayado por defecto */
+}
+a:hover, a:focus{
+  text-decoration: underline;   /* feedback al pasar el mouse */
+}
+
+/* Botón para el enlace de Maps */
+.boton{
+  display: inline-block;
+  background: var(--principal);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+.boton:hover{
+  filter: brightness(0.95);
+}
+
+/* ====== Clases personalizadas ====== */
+.resaltado{
+  background: #fff3cd;          /* resalta con color suave */
+  padding: 2px 6px;
+  border-radius: 6px;
+}
